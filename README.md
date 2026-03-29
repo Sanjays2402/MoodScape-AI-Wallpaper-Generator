@@ -1,52 +1,67 @@
-# MoodScape — AI Wallpaper Generator
+# 🎨 MoodScape — AI Wallpaper Generator
 
-MoodScape is a polished Next.js starter for an AI wallpaper product that turns moods, lyrics, and visual vibe into wallpaper-ready art direction.
+![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=flat&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
 
-## What ships today
+MoodScape turns **moods, lyrics, and visual vibes** into wallpaper-ready art direction. A polished Next.js app with a cinematic landing page and interactive generator panel.
 
-- Cinematic landing page with a premium product narrative
-- Interactive generator panel for:
-	- mood text
-	- song or lyric references
-	- visual mood board style input
-	- photo-inspired vibe prompts
-- Style presets for cinematic, lofi, cyberpunk, minimalist, dark academia, and cottagecore moods
-- Color locking, aspect ratio selection, variation control, and a `Surprise Me` flow
-- Demo `/api/generate` route that builds a production-ready prompt package and visual concept preview
+## ✨ Features
 
-## Stack
+- 🎬 **Cinematic landing page** with premium product narrative
+- 🎛️ **Interactive generator panel** for:
+  - Mood text input
+  - Song or lyric references
+  - Visual mood board style input
+  - Photo-inspired vibe prompts
+- 🎨 **Style presets** — cinematic, lofi, cyberpunk, minimalist, dark academia, cottagecore
+- 🔒 **Color locking**, aspect ratio selection, variation control
+- 🎲 **Surprise Me** flow for random inspiration
+- 🔌 Demo `/api/generate` route with production-ready prompt builder and visual concept preview
 
-- Next.js 16 App Router
-- React 19
-- Tailwind CSS 4
-- TypeScript
-- Lucide React icons
+## 🛠️ Tech Stack
 
-## Getting started
+- **Next.js 16** App Router
+- **React 19**
+- **Tailwind CSS 4**
+- **TypeScript**
+- **Lucide React** icons
 
-1. Install dependencies
-2. Start the development server
+## 🚀 Getting Started
 
 ```bash
+# Clone the repo
+git clone https://github.com/Sanjays2402/MoodScape-AI-Wallpaper-Generator.git
+cd MoodScape-AI-Wallpaper-Generator
+
+# Install dependencies
 npm install
+
+# Start dev server
 npm run dev
 ```
 
-Then open http://localhost:3000.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Environment
+## ⚙️ Environment
 
-Copy `.env.example` to `.env.local` when you are ready to wire external services.
+Copy `.env.example` to `.env.local` when ready to wire external services:
 
-Planned integrations:
+| Variable | Purpose |
+|----------|---------|
+| `REPLICATE_API_TOKEN` | FLUX or SDXL image generation |
+| `NEXT_PUBLIC_SUPABASE_URL` | Auth and gallery |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Client-side Supabase |
+| `SUPABASE_SERVICE_ROLE_KEY` | Secure backend writes |
 
-- `REPLICATE_API_TOKEN` for FLUX or SDXL generation
-- `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` for auth and gallery
-- `SUPABASE_SERVICE_ROLE_KEY` for secure backend writes
+## 🗺️ Roadmap
 
-## Suggested next steps
-
-1. Replace the demo generator response with a real Replicate call
+1. Replace demo generator with real Replicate calls
 2. Save generations and remixes in Supabase
-3. Add background upscale jobs for true 4K and ultrawide exports
-4. Introduce moderation, quotas, and public gallery curation
+3. Background upscale jobs for 4K and ultrawide exports
+4. Moderation, quotas, and public gallery curation
+
+## 👤 Author
+
+**Sanjay Santhanam**
